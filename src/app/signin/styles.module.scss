@@ -1,0 +1,38 @@
+.signin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.title {
+  font-size: 64px;
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-family: 'Montserrat 600';
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+  font-family: 'Montserrat 400';
+}
+
+.input__wrapper {
+  width: 300px;
+  margin-bottom: 24px;
+}
+
+.button__wrapper {
+  width: 300px;
+  height: 54px;
+}
+
+.error__wrapper {
+  color: #EB5757;
+  font-size: 12px;
+  margin-top: 5px;
+}

@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: none;
+}
+
+.label {
+  position: relative;
+  padding-left: 30px;
+}
+
+.label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  transform: translateY(-50%);
+  background-color: #224957;
+  transition: background-color 0.3s;
+}
+
+.checkbox:checked + .label::before {
+  content: "✓";
+  font-size: 14px;
+  color: #ffffff;
+}

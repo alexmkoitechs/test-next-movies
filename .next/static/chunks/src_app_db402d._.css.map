@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/alexmolod/Projects/test-next-movies/src/app/components/Input/styles.module.scss.module.css"],"sourcesContent":[".input{width:100%;height:45px;border-radius:10px;border:none;background-color:#224957;padding-left:16px;color:#fff}.input::placeholder{font-weight:bold;opacity:.5;color:#fff;font-family:\"Montserrat 400\"}"],"names":[],"mappings":"AAAA;;;;;;;;;;AAAmH"}},
+    {"offset": {"line": 17, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 20, "column": 0}, "map": {"version":3,"sources":["file:///Users/alexmolod/Projects/test-next-movies/src/app/components/Checkbox/styles.module.scss.module.css"],"sourcesContent":[".wrapper{display:flex;align-items:center;justify-content:center;cursor:pointer}.checkbox{display:none}.label{position:relative;padding-left:30px}.label::before{content:\"\";position:absolute;left:0;top:50%;width:18px;height:18px;display:flex;border-radius:5px;justify-content:center;transform:translateY(-50%);background-color:#224957;transition:background-color .3s}.checkbox:checked+.label::before{content:\"✓\";font-size:14px;color:#fff}"],"names":[],"mappings":"AAAA;;;;;;;AAA+E;;;;AAAuB;;;;;AAA2C;;;;;;;;;;;;;;;AAA4N"}},
+    {"offset": {"line": 56, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 59, "column": 0}, "map": {"version":3,"sources":["file:///Users/alexmolod/Projects/test-next-movies/src/app/components/Button/styles.module.scss.module.css"],"sourcesContent":[".button{width:100%;height:100%;background-color:#2bd17e;border:none;border-radius:10px;color:#fff;font-size:16px;font-family:\"Montserrat 700\";cursor:pointer}"],"names":[],"mappings":"AAAA"}},
+    {"offset": {"line": 70, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 73, "column": 0}, "map": {"version":3,"sources":["file:///Users/alexmolod/Projects/test-next-movies/src/app/signin/styles.module.scss.module.css"],"sourcesContent":[".signin{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100vh}.title{font-size:64px;margin-bottom:40px;color:#fff;font-family:\"Montserrat 600\"}.form{display:flex;align-items:center;flex-direction:column;color:#fff;font-family:\"Montserrat 400\"}.input__wrapper{width:300px;margin-bottom:24px}.button__wrapper{width:300px;height:54px}.error__wrapper{color:#eb5757;font-size:12px;margin-top:5px}"],"names":[],"mappings":"AAAA;;;;;;;;AAAkG;;;;;;;AAAiF;;;;;;;;AAAoG;;;;;AAA+C;;;;;AAAyC"}},
+    {"offset": {"line": 111, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
