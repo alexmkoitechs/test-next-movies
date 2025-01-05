@@ -1,0 +1,54 @@
+@use '@/styles/colors.scss' as *;
+
+.drop_image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.dropzone {
+  padding: 20px;
+  font-size: 14px;
+  font-size: 16px;
+
+  cursor: pointer;
+  height: 100%;
+  color: $white;
+  display: flex;
+  text-align: center;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+  border: 2px dashed $white;
+  background: $darkSlateGray;
+  font-family: 'Montserrat 400';
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.preview {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.delete_icon {
+  right: 0;
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.upload_icon_wrapper {
+  margin-bottom: 8px;
+}

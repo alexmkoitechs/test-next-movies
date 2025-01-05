@@ -1,8 +1,10 @@
+@use '@/styles/colors.scss' as *;
+
 .wrapper {
   display: flex;
+  cursor: pointer;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 }
 
 .checkbox {
@@ -16,12 +18,12 @@
 
 .label::before {
   content: "";
-  position: absolute;
   left: 0;
   top: 50%;
   width: 18px;
   height: 18px;
   display: flex;
+  position: absolute;
   border-radius: 5px;
   justify-content: center;
   transform: translateY(-50%);
@@ -31,6 +33,6 @@
 
 .checkbox:checked + .label::before {
   content: "✓";
+  color: $white;
   font-size: 14px;
-  color: #ffffff;
 }

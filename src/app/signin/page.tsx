@@ -1,14 +1,15 @@
 'use client'
 
 import { useState } from 'react';
-import * as yup from 'yup';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import axios from 'axios';
 import { useRouter } from 'next/navigation';
-import Input from '../components/Input';
-import Checkbox from '../components/Checkbox';
-import Button from '../components/Button';
+import * as yup from 'yup';
+import axios from 'axios';
+
+import Input from '@/app/components/Input';
+import Button from '@/app/components/Button';
+import Checkbox from '@/app/components/Checkbox';
 
 import styles from './styles.module.scss';
 
@@ -34,10 +35,9 @@ const SignIn = () => {
 
   const onSubmit: SubmitHandler<IFormInput> = async (data) => {
     try {
-      console.log('data', data);
       const response = await axios.post('/api/auth/login', data);
       localStorage.setItem('token', response.data.token);
-      router.push('/');
+      router.push('/movies');
       /* eslint-disable @typescript-eslint/no-explicit-any */
     } catch (error: any) {
       setErrorMessage(error.response?.data?.message || 'Something went wrong');
@@ -49,13 +49,16 @@ const SignIn = () => {
       <h1 className={styles.title}>Sign In</h1>
       <form onSubmit={handleSubmit(onSubmit)} autoComplete='off' className={styles.form}>
         <div className={styles.input__wrapper}>
+          * user@test.com
           <Input type="email" placeholder='Email' register={register} name='email' />
+          
           <div className={styles.error__wrapper}>
             {errors.email ? errors.email.message : ''}
           </div>
         </div>
         <div className={styles.input__wrapper}>
-          <Input type="password" placeholder='Password' register={register} name='password' />
+          * user-password
+          <Input type="text" placeholder='Password' register={register} name='password' />
           <div className={styles.error__wrapper}>
             {errors.password ? errors.password.message : errorMessage || ''}
           </div>

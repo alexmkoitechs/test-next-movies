@@ -1,0 +1,52 @@
+@use '@/styles/colors.scss' as *;
+
+html,
+body {
+  height: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Montserrat 400';
+  src: local('Montserrat Regular'), url('../../public/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat 600';
+  src: local('Montserrat SemiBold'), url('../../public/assets/fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat 700';
+  src: local('Montserrat Bold'), url('../../public/assets/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+.container {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1440px;
+  background-size: 100% 110px;
+  background-color: $richBlack;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-image: url(../../public/assets/images/backgrond-bottom.png);
+
+  @media screen and (max-width: 1024px) {
+    padding: 80px 24px;
+  }
+  @media screen and (min-width: 1025px) {
+    padding: 120px;
+  }
+}

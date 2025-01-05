@@ -1,23 +1,25 @@
+@use '@/styles/colors.scss' as *;
+
 .signin {
+  height: 100vh;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
 .title {
+  color: $white;
   font-size: 64px;
   margin-bottom: 40px;
-  color: #ffffff;
   font-family: 'Montserrat 600';
 }
 
 .form {
+  color: $white;
   display: flex;
   align-items: center;
   flex-direction: column;
-  color: #ffffff;
   font-family: 'Montserrat 400';
 }
 
@@ -32,7 +34,7 @@
 }
 
 .error__wrapper {
-  color: #EB5757;
   font-size: 12px;
   margin-top: 5px;
+  color: $fireOpal;
 }

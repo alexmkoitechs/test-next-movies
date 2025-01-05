@@ -1,0 +1,73 @@
+@use '@/styles/colors.scss' as *;
+
+.title {
+  color: $white;
+  font-family: 'Montserrat 600';
+
+  @media screen and (max-width: 1024px) {
+    font-size: 32px;
+    margin-bottom: 80px;
+  }
+  @media screen and (min-width: 1025px) {
+    font-size: 48px;
+    margin-bottom: 120px;
+  }
+}
+
+.form {
+  gap: 0.5em;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  padding: 0.5em;
+  justify-items: center;
+  grid-template-areas:
+    "main rightTop"
+    "main rightLower";
+
+  @media screen and (max-width: 1024px) {
+    grid-template-areas: "topLeft" "main" "lowerLeft";
+  }
+}
+
+.right_up {
+  width: 100%;
+  max-width: 380px;
+}
+
+.right_down {
+  gap: 10;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  max-width: 380px;
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 1025px) {
+    margin-top: -112px;
+  }
+}
+
+.left {
+  width: 100%;
+  height: 500px;
+  grid-area: main;
+  max-width: 475px;
+}
+
+.input__wrapper {
+  margin-bottom: 24px;
+}
+
+.input__wrapper_second {
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 1025px) {
+    width: 215px;
+  }
+}
