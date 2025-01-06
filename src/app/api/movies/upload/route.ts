@@ -27,8 +27,6 @@ export async function POST(req: NextRequest) {
       imgUrl: process.env.NEXT_PUBLIC_AWS_HOSTNAME + fileName,
     };
 
-    console.log('movieId', movieId)
-
     if (movieId) {
       await prisma.movies.update({
         where: { id: +movieId },

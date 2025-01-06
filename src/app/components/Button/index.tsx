@@ -6,7 +6,7 @@ interface IBtn {
   label: string;
   onClick?: () => void;
   view?: 'primary' | 'secondary';
-  type: 'submit' | 'reset' | 'button' | undefined;
+  type: 'submit' | 'reset' | 'button';
 }
 
 const Button: FC<IBtn> = ({ type, view='primary', label, onClick }) => (

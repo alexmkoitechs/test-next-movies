@@ -4,11 +4,11 @@ import { UseFormRegister } from 'react-hook-form';
 import styles from './styles.module.scss';
 
 interface InputProps {
-  type: 'email' | 'password' | 'text';
+  name: string;
   placeholder: string;
+  type: 'email' | 'password' | 'text';
   /* eslint-disable @typescript-eslint/no-explicit-any */
   register: UseFormRegister<any>;
-  name: string;
 }
 
 const Input: FC<InputProps> = ({ type, placeholder, register, name }) => {
