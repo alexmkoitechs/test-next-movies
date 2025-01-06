@@ -1,5 +1,11 @@
 @use '@/styles/colors.scss' as *;
 
+.movies {
+  width: 100%;
+  min-height: 1250px;
+  height: calc(100vh - 240px);
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -96,11 +102,4 @@
     width: 32px;
     height: 32px;
   }
-}
-
-
-
-.movies {
-  width: 100%;
-  height: 100%;
 }

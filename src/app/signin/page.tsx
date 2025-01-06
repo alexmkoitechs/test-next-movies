@@ -58,7 +58,7 @@ const SignIn = () => {
         </div>
         <div className={styles.input__wrapper}>
           * user-password
-          <Input type="text" placeholder='Password' register={register} name='password' />
+          <Input type="password" placeholder='Password' register={register} name='password' />
           <div className={styles.error__wrapper}>
             {errors.password ? errors.password.message : errorMessage || ''}
           </div>
