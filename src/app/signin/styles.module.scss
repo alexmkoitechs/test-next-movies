@@ -1,7 +1,7 @@
 @use '@/styles/colors.scss' as *;
 
 .signin {
-  height: 100%;
+  height: calc(100vh - 240px);
   display: flex;
   align-items: center;
   flex-direction: column;
